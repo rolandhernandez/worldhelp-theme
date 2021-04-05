@@ -23,7 +23,7 @@ function sponsorships_function($atts) {
     $cards = "";
     foreach ($results as $result) {
         $cards .= '<div class="sponsorship-card">';
-        $cards .= '<p>'.$result["first_name"]." ".$result["last_name"].'</p>';
+        $cards .= '<h3>'.$result["first_name"]." ".$result["last_name"].'</h3>';
         $cards .= '<img width="300px" src="'.$result["picture"].'" />';
 
         $request = wp_remote_get( 'http://www.geognos.com/api/en/countries/info/'.$result["country"].'.json' );

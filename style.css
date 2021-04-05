@@ -19,7 +19,7 @@
     margin: 10px;
 }
 
-.sponsorship-card p {
+.sponsorship-card p, .sponsorship-card h3 {
     padding: 20px;
     text-align: center;
 }
