@@ -22,7 +22,7 @@ function sponsorships_function($atts) {
 
     $cards = "";
     foreach ($results as $result) {
-        $cards .= '<div class="sponsorship-card" style="padding: 20px; border: 1px solid lightgrey; width: 300px; float: left; margin: 10px;">';
+        $cards .= '<div class="sponsorship-card">';
         $cards .= '<p>'.$result["first_name"]." ".$result["last_name"].'</p>';
         $cards .= '<img width="300px" src="'.$result["picture"].'" />';
 

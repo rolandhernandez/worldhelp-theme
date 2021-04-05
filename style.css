@@ -11,3 +11,10 @@
  
 /* =Theme customization starts here
 ------------------------------------------------------- */
+.sponsorship-card {
+    padding: 20px; 
+    border: 1px solid lightgrey; 
+    width: 300px; 
+    float: left; 
+    margin: 10px;
+}
