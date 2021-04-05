@@ -33,7 +33,7 @@ function sponsorships_function($atts) {
 
         $cards .= '<p>Country: '.$data->Results->Name.'</p>';
         $cards .= '<p>Capital: '.$data->Results->Capital->Name.'</p>';
-        $cards .= '<p>'.do_shortcode('[button class="sponsor-btn" link="'.$a['link'].'"]Sponsor Me[/button]').'</p>';
+        $cards .= '<p>'.do_shortcode('[button class="sponsor-btn" link="'.$a['link'].'?sponsor='.$result["id"].'"]Sponsor Me[/button]').'</p>';
         $cards .= '</div>';
         
     }
