@@ -23,3 +23,8 @@
     padding: 20px;
     text-align: center;
 }
+
+.smallbluesponsor-btn {
+    margin: 0 auto !important;
+    display: inline-block !important;
+}
