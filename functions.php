@@ -9,6 +9,7 @@ add_action( 'init', 'add_sponsorship_shortcode' );
 function sponsorships_function($atts) { 
     $a = shortcode_atts( array(
         'country' => 'US',
+        'link' => '#'
         ), $atts );
 
     global $wpdb;
@@ -32,7 +33,7 @@ function sponsorships_function($atts) {
 
         $cards .= '<p>Country: '.$data->Results->Name.'</p>';
         $cards .= '<p>Capital: '.$data->Results->Capital->Name.'</p>';
-        $cards .= '<p>'.do_shortcode('[button class="sponsor-btn"]Sponsor Me[/button]').'</p>';
+        $cards .= '<p>'.do_shortcode('[button class="sponsor-btn" link="'.$a['link'].'"]Sponsor Me[/button]').'</p>';
         $cards .= '</div>';
         
     }
